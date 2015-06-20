@@ -1,55 +1,52 @@
 <!DOCTYPE html>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <head>
-<div id="header"></div>
+<html lang="en-us">
+    <meta charset="UTF-8">
+    <title>Boston Imaging and Vision by BostonImagingVision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 </head>
-  <body>
-  <div id="page-header"></div>
-  <section class="main-content">
+<body id="body">
 
-<h3><a id="our-community" class="anchor" href="#our-community" aria-hidden="true"><span class="octicon octicon-link"></span></a>Our Community</h3>
+    <section class="page-header">
+      <h1 class="project-name">Boston Imaging and Vision</h1>
+      <h2 class="project-tagline">The Machine Vision Communities of Boston and all of Massachusetts</h2>
+      <button type="button" class="btn" onclick="loadHome()">Home</button>
+      <a href="http://www.meetup.com/bostonimagevision" target="_blank" class="btn">Meetup</a>
+      <button type="button" class="btn" onclick="loadCompanies()">Companies</button>
+      <p>
+      <button type="button" class="btn" onclick="loadResearch()">Research Institutions</button>
+      <button type="button" class="btn" onclick="loadMembership()">Membership</button>
+      <button type="button" class="btn" onclick="loadRelated()">Related</button>
+      </p>
+   </section>
 
-<p>The Boston area is one of the world's largest concentration of machine vision and image processing, with an amazing combination of universities, research labs, mature companies and startups. </p>
+   <section class="main-content">
 
-<p><img src="images/paracosm.jpeg" align="right" width="50%" height="50%"> Boston Imaging and Vision (BIV) is an organization dedicated to bringing the our community together in Boston and throughout Massachusetts.  We have monthly meetups where we have about 120 people per event.  Please join us at our next <a href="http://www.meetup.com/bostonimagevision/">meetup</a>. We also mail out monthly notices of upcoming machine vision events to folks who sign up on the meetup page. </p>
+   <div id="page-content"></div>
 
-<h3>
-<a id="our-members" class="anchor" href="#our-members" aria-hidden="true"><span class="octicon octicon-link"></span></a>Member Organizations</h3>
+      <footer class="site-footer">
+         Contact us at <a href="&#109ailto:&#066;&#111;&#115;&#116;&#111;&#110;&#073;&#109;&#097;&#103;&#105;&#110;&#103;&#086;&#105;&#115;&#105;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#066;&#111;&#115;&#116;&#111;&#110;&#073;&#109;&#097;&#103;&#105;&#110;&#103;&#086;&#105;&#115;&#105;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+        <span class="site-footer-owner"> Copyright (c) 2015 <a href="https://github.com/BostonImagingVision/BostonImageVision">Boston Imaging and Vision</a>. All rights reserved.</span>
+      </footer>
 
-<p>We will soon begin accepting 
-<a href="membership.html">member</a> companies to support our community. 
+   </section>
 
-<h3>
-<a id="our-organizers" class="anchor" href="#our-organizers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Organizers</h3>
-
-<p>And, we have some fantastic organizers who work hard to bring the community together:</p>
-
-<pre><code>Youssef Rouchdy: founder of Boston Imaging and Vision 
-Samson Timoner: founder of two machine vision companies.
-Magnus Snorrason: founder of one machine vision company, CTO of two.
-</code></pre>
-
-<h3>
-<a id="social-media" class="anchor" href="#social-media" aria-hidden="true"><span class="octicon octicon-link"></span></a>Social Media</h3>
-
-<p>We're all busy on our companies, so that we don't spend a ton of time on social media. We're starting to experiment with a hashtag,  <a href="https://twitter.com/search?q=BostonImageVision">#BostonImageVision</a></p>
-
-<h3>
-<a id="helpers" class="anchor" href="#helpers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Helpers</h3>
-
-<p>We are also looking for people to help out, and speakers. Contact us at <a href="&#109ailto:&#066;&#111;&#115;&#116;&#111;&#110;&#073;&#109;&#097;&#103;&#105;&#110;&#103;&#086;&#105;&#115;&#105;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#066;&#111;&#115;&#116;&#111;&#110;&#073;&#109;&#097;&#103;&#105;&#110;&#103;&#086;&#105;&#115;&#105;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
-
-
-<div id="footer"></div>
-
-</section>
-
-<script src="analytics.js"></script>
+   <script src="analytics.js"></script>
 
 <script> 
-  $("#footer").load("footer.html"); 
-  $("#header").load("header.html"); 
-  $("#page-header").load("page-header.html"); 
+
+ function loadHome()      {$("#page-content").load("home.html"); };
+ function loadCompanies() {$("#page-content").load("companies.html"); };
+ function loadResearch()  {$("#page-content").load("research.html"); };
+ function loadMembership(){$("#page-content").load("membership.html"); };
+ function loadRelated()   {$("#page-content").load("related.html"); };
+ loadHome();
+
 </script> 
   </body>
 </html>
