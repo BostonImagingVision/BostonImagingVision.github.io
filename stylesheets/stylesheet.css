@@ -247,3 +247,7 @@ a {
 .company .owner {
   font-size: 70%;  
 }
+
+#map { height: 100%; 
+       width: 100%;
+       position: absolute;}
