@@ -1,4 +1,12 @@
 [
+  {"_COMMENT_":
+
+   ["If you edit this file, please be sure to rebuild the corresponding GeoJSON",
+    "file (geo_companies.geojson) in this directory.",
+    "Do this by running this script: ../bin/build_geo.py"
+   ]
+  },
+
   {"name":"9 Point Medical",
    "status":"startup",
    "url":"http://www.ninepointmedical.com/"},
@@ -159,11 +167,9 @@
    "url":"http://www.baesystems.com"},
   {"name":"Bio-Rad", 
    "status":"local-offices",
-   "address":"",
    "url":"http://www.bio-rad.com"},
   {"name":"IBM", 
    "status":"local-offices",
-   "address":"",
    "url":"http://www.ibm.com"},
   {"name":"Kiva", 
    "status":"local-offices",
@@ -180,7 +186,6 @@
    "url":"http://www.google.com"},
   {"name":"GE Navigation", 
    "status":"local-offices",
-   "address":"",
    "url":"http://www.ge.com"},
   {"name":"Nvidia", 
    "status":"local-offices",
