@@ -4,6 +4,9 @@ var INITIAL_ZOOM = 11;
 $(document).ready(init_map);
 
 function init_map(){
+  if ($('#map').length == 0) {
+	return;
+  }
   var map = L.map('map').setView(BOSTON_LATLNG, INITIAL_ZOOM);
   var credit = '<a href="http://bostonimagingvision.github.io">Boston Imaging and Vision</a>';
   // load a tile layer
