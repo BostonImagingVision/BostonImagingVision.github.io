@@ -7,6 +7,9 @@
    ]
   },
 
+  {"name":"3D Data",
+   "status":"startup",
+   "url":"http://www.3ddataltd.com/"},
   {"name":"9 Point Medical",
    "status":"startup",
    "url":"http://www.ninepointmedical.com/"},
@@ -126,6 +129,9 @@
    "status":"startup",
    "ownedBy": "Twitter",
    "url":"http://Whetlab.com"},
+  {"name":"XactSense", 
+   "status":"startup",
+   "url":"http://XactSense.com"},
   {"name":"Broad Institute", 
    "status":"locally-based",
    "address":"415 Main St., Cambridge, MA 02142",
