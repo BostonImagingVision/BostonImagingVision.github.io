@@ -12,7 +12,8 @@ $(document).ready(function(){
 
 function loadHome()      {$("#page-content").load("home.html"); };
 
-function loadResearch()  {$("#page-content").load("research.html"); };
+function loadResearch()  {$("#page-content").load("research.html",
+                                                 function () {COMPANIES.done(renderCompanies);});};
 
 function loadMembership(){$("#page-content").load("membership.html"); };
 
@@ -27,11 +28,15 @@ function renderCompanies() {
   var startups = $.grep(this, function(c,i){ return c.status == "startup";});
   var locallyBased = $.grep(this, function(c,i){ return c.status == "locally-based";});
   var localOffices = $.grep(this, function(c,i){ return c.status == "local-offices";});
+  var universities = $.grep(this, function(c,i){ return c.status == "universities";});
+  var research     = $.grep(this, function(c,i){ return c.status == "research-labs";});
   var andMore = "<tr><td><b>And Many More...</b></td></tr>";
   renderTable(startups, $("table#companies"), renderCompany);
   $("table#companies").append(andMore);
   renderTable(locallyBased, $("table#locally-based"), renderCompany);
   renderTable(localOffices, $("table#local-offices"), renderCompany);
+  renderTable(research,     $("table#research-labs"), renderCompany);
+  renderTable(universities, $("table#universities"), renderCompany);
 }
 
 // items: a list of objects to be rendered by renderFunction
